@@ -13,7 +13,7 @@
 
 ## 概要
 
-本講習は、だれでも自由に使うことができる公共DBやウェブツールを活用して、研究のさまざまな場面で調べることの多いオミックスDBを簡単に調べるための方法と基礎知識について学びます。
+本講習は、だれでも自由に使うことができる公共データベース（以下、DBと略します）やウェブツールを活用して、研究のさまざまな場面で調べることの多いオミックスDBを簡単に調べるための方法と基礎知識について学びます。
 とくに、需要の増している公共DBから遺伝子発現データを検索し取得してくる方法について詳しく説明、実習します。
 また、自ら行なった大規模発現解析の(あるいは公共DBから取得・解析した)結果として得られた数百〜数千におよぶ遺伝子セットについて、生物学的な解釈をする方法とその結果の考察を実践します。
 
@@ -28,7 +28,7 @@
   - AOE (All of gene expression)
     - 【実習1】AOEを使って、興味ある実験データセットを絞り込む
   - NCBI Gene Expression Omnibus（GEO）
-  - EBI OmicsDI
+  - EBI ArrayExpress
     - 【実習2】OmicsDIを使って、興味あるオミックスデータセットを検索する
 -  個々の遺伝子の発現プロファイルなどを調べる
     - 【実習3】RefExを使って、組織特異的遺伝子を検索する
@@ -45,9 +45,6 @@
     - 反応が無いからと言って何度もクリックするとますます繋がらなくなってしまいます。おおらかな気持ちで臨みましょう。
 - わからないことがあったら挙手にてスタッフにお知らせください。
     - 遠慮は無用です(そのための講習会です!)。おいてけぼりは楽しくありません。
-- 実験的な試みとしてWeb上で匿名で質問・コメントできるフォームを用意してみました。
-  - [講師用](https://docs.google.com/presentation/d/19CsrlyrT1hdrmPVnS4R7uUveOgHfN5IqPK-kt8WLCHw/edit?usp=sharing)
-  - [受講者質問用フォーム](https://goo.gl/slides/jnrta2)(右クリックから「新しいタブで開く」推奨)
 
 ----
 
@@ -85,12 +82,12 @@
 - 次世代シークエンサー(NGS: Next Generation Sequencer)の発明→個々のサンプルでのtranscript sequencing (RNA-seq)が現実的に
 	- データはNGS配列DB(SRA: Sequence Read Archive) and/or 遺伝子発現DBへ?
 	- NCBI,EBIでは遺伝子発現DB(それぞれGEO,ArrayExpress)に登録すれば、配列データ(FASTQファイル)がSRAにも登録される状況
-		- DDBJ(日本)もその仕組みを現在構築中（上述のDOR）
+		- DDBJ(日本)もその仕組みを提供中（上述のGEA）
 	- 現状、どこかの公共DBに登録されていればOK
 
 ### 発現定量のステップ
 
-詳細は省くが、データを利用するので発現定量の概要を説明する。
+詳細は省くが、データを利用するので発現定量の概要を説明。
 
 #### マイクロアレイ
 
@@ -114,11 +111,10 @@
 
 ## 遺伝子発現DBの使い方
 
-
-### [AOE(All of gene Expression)](http://aoe.dbcls.jp/)
-- 遺伝子発現用のデータ目次
+### [AOE(All of gene Expression)](https://aoe.dbcls.jp/)
+- 遺伝子発現用のデータ目次 [`https://AOE.dbcls.jp/`](https://AOE.dbcls.jp/)
+  - EBI ArrayExpress + NCBI GEO + DDBJ GEA をカバー
 	- 年ごと、生物種ごとにヒストグラム表示
-- http://AOE.dbcls.jp/
 - マイクロアレイ(Affymetrix,Agilent,それ以外) ＋ RNA-seq(Illumina,それ以外)でデータが分類
 - キーワード検索結果もヒストグラム表示されてわかりやすい
 
@@ -146,7 +142,6 @@
     - GSM: Sample ー 1枚のマイクロアレイチップから得られたサンプルデータ
     - GSE: Series ー 1つの実験で得られたGSMのセット
     - GDS: DataSet ー NCBIのスタッフが解析可能なデータを集めて再編成したGSMのセット
-
 - [【参考】NCBI GEOの使い方1〜マイクロアレイデータの検索・取得〜 2017](https://doi.org/10.7875/togotv.2017.002)
 
 ----
@@ -157,12 +152,14 @@
 	- https://www.ebi.ac.uk/arrayexpress/
 	- NCBI GEOのデータも取り込んでいて、こちらのほうがデータ数が多い
   	- が、2017年10月にそれを止めるとアナウンス
-- OmicsDIから検索可能
+- EBI OmicsDIから検索可能
   - [`https://omicsDI.org/`](https://omicsDI.org/)
   - インターフェースが使いやすい
 
 #### 【実習2】OmicsDIを使って、興味あるオミックスデータセットを検索する
-1. [OmicsDIのサイト](https://www.omicsdi.org/)にアクセス、検索窓に'cancer'と入力
+1. [OmicsDIのサイト](https://www.omicsdi.org/)にアクセス
+2. 検索窓に'cancer'と入力、'search'ボタンをクリック
+3. 左上の'Transcriptomics'をクリックして結果を絞り込む
 
 
 - [【参考】OmicsDI を使って様々なデータベースからオミクスデータを縦断的に検索する](https://doi.org/10.7875/togotv.2018.118)
@@ -171,9 +168,9 @@
 ----
 
 ## 個々の遺伝子の発現プロファイルを調べる
-### [RefEx (Reference Expression dataset)](http://refex.dbcls.jp/)
+### [RefEx (Reference Expression dataset)](https://refex.dbcls.jp/)
 - ヒト、マウス、ラットの遺伝子発現情報リファレンスデータセット
-  - [http://refex.dbcls.jp/](http://refex.dbcls.jp/)
+  - [http://refex.dbcls.jp/](https://refex.dbcls.jp/)
 - 4つの異なる実験手法（EST、GeneChip、CAGE、RNA-seq）によって得られた正常組織、初代培養細胞、細胞株における遺伝子発現データを検索、閲覧可能
     - 最近新たに、FANTOM5 CAGEデータが追加(ヒト556種、マウス286種)
     - 掲載しているデータやオリジナルデータなどの詳細については、[RefExについて](http://refex.dbcls.jp/about.php?lang=ja)
@@ -269,5 +266,5 @@
 
 #### 【応用1】複数のツールが統合されたサイトを用いて、発現データの結果を生物学的に解釈する
 これまでの課題が早くできてしまった向けに。
-[iDEP](http://bioinformatics.sdstate.edu/idep/)というRNA-seqデータ解析でよく使われる発現差解析やパスウェイ解析のためのツールが統合されたウェブアプリケーションを試してみましょう。
 
+[iDEP](http://bioinformatics.sdstate.edu/idep/)というRNA-seqデータ解析でよく使われる発現差解析やパスウェイ解析のためのツールが統合されたウェブアプリケーションを試してみましょう。
