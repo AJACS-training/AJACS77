@@ -149,7 +149,7 @@ jPOSTdbの特徴
 - iPS細胞のデータセットでSliceを作ってみよう
   - Topの検索ページで"iPS cell"でデータセットを検索します
 
-![jpost](raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_14.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_14.png)
 
 - テーブルの下にある"New Slice..."ボタンをクリックします
 
