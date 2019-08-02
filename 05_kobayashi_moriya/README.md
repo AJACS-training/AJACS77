@@ -62,7 +62,7 @@ jPOSTdbの特徴
   - テキストエリアをクリックすると候補が表示されます。クリックで選択されます
   - pie chartをクリックすることでも選択できます
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_02.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_02.png)
 
 - テーブルのリストが66データセット、14,620タンパク質に減りました
 - 生物種以外に、Sample type、Cell line、Organ、Disease、Mofdification、Instrumentで絞り込みが行なえます
@@ -74,7 +74,7 @@ jPOSTdbの特徴
 - テーブルの上にワード検索Boxがあります。キーワードに関連したデータセットが検索されます
   - データがまだ少ないので、今回は"fibroblast"で検索します
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_03.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_03.png)
 
 - 9つのデータセットが引っかかり、5,711タンパク質が収録されていました
 
@@ -82,32 +82,32 @@ jPOSTdbの特徴
 ## データセットの中身を見ていこう
 - テーブルの "DS87_1" をクリックしてデータセットDS87_1の中身を表示しましょう
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_04.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_04.png)
 
 - データセットのメタデータがまとめられたテーブルが表示されます
 - Project ID、Project title、Project descriptionはリポジトリに登録したときのものが表示されます
 - Sampleの情報、統計情報、データをまとめてDLするリンクがあります
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_05.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_05.png)
 
 - 同定されたタンパク質の染色体毎の数を表示しています
   - UniProt IDベースのカウントになるので、遺伝子数とは厳密には異なります
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_06.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_06.png)
 
 - Protein existenceのレベルの内訳を表示しています
   - ヒトはneXtProtに基づいており、それ以外の生物種はUniProtのデータに基づいています
   - それぞれのタンパク質のリストを見ることができます
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_07.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_07.png)
 
 - データセットのタンパク質をKEGG Pathwayにマッピングすることができます
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_08.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_08.png)
 
 - 色はスペクトルカウントに基づいた色になっており、青が少なく、赤が多いことを意味しています
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_09.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_09.png)
 
 ---
 ## タンパク質をみてみよう
@@ -115,17 +115,17 @@ jPOSTdbの特徴
 - テーブルを"Dataset"から"Protein"に切り替えます
 - 表示されるデータの都合が良いので、今回は"BCLF1"で検索します
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_10.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_10.png)
 
 - ヒトとマウスでタンパク質が引っかかりました
 - Protein nameをクリックするとタンパク質ページに以降します。今回はヒトのBCLF1を見てみましょう
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_11.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_11.png)
 
 - タンパク質の情報テーブルを表示しています
 - ヒトのタンパク質の場合iMPAQT へのリンクがあります
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_12.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_12.png)
 
 - タンパク質ブラウザを表示しています
   - スクロール操作で拡大縮小できます
@@ -138,7 +138,7 @@ jPOSTdbの特徴
   - P-site linkage: リン酸化部位のペプチド上での共起情報
   - UniProt annotation: UniProtに収録されている既知の修飾情報
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_13.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_13.png)
 
 - isoform間、タンパク質間のペプチドの共有情報を表示しています
   - 同じ色のBoxが同一のペプチドになります
@@ -149,11 +149,11 @@ jPOSTdbの特徴
 - iPS細胞のデータセットでSliceを作ってみよう
   - Topの検索ページで"iPS cell"でデータセットを検索します
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_14.png)
+![jpost](raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_14.png)
 
 - テーブルの下にある"New Slice..."ボタンをクリックします
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_15.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_15.png)
 
 - Slice作成画面に移動します
   - この画面でも絞り込み検索が可能です
@@ -162,7 +162,7 @@ jPOSTdbの特徴
   - ３つのチェックボックスにチェックを入れます
 - "Add"ボタンをクリックすると、Sliceが作成されます
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_16.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_16.png)
 
 - 選択したデータセットをまとめた情報が表示されます
   - 見方はデータセット毎のページと同様です
@@ -173,16 +173,16 @@ jPOSTdbの特徴
 - もう一つ"fibroblast"でSliceを作成します
   - Sliceページのタブに並んでる"+"マークからも新規Sliceが作成できます
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_17.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_17.png)
 
 - 2つのSliceを比較します
   - タブにあるチェックボックスをチェックして”Compare"ボタンをクリックします
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_18.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_18.png)
 
 - 比較ページに移動します
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_19.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_19.png)
 
 - 統計情報が表示されます
 - また、簡易的な変動解析をすることができます
@@ -193,7 +193,7 @@ jPOSTdbの特徴
     - Empirical Bayes estimationは比較的少ないサンプル数でも比較が可能です
     - Fold change of the meanは統計処理はしないので１サンプルでも比べられます
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_20.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_20.png)
 
 - Volcanoプロットがj表示されます
   - 各プロットがタンパク質になります
@@ -204,13 +204,13 @@ jPOSTdbの特徴
   - プロット左にある"both"ボタンをクリックすることで上昇したものだけ、下降したものだけを表示することもできます
   - Fold change of the meanの場合はヒストグラム風のプロットになります
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_21.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_21.png)
 
 - 選択した有意な変動の見られたタンパク質リストを用いて、エンリッチメント解析を行うことができます
   - KEGG Pathway, GO, ChIP-Atlasなどを用いて解析ができます
   - 今回は"KEGG Pathway"のカテゴリでエンリッチメント解析をしてみましょう
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_22.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_22.png)
 
 - ネットワークグラフが表示されます
   - 各ノードがカテゴリを示しています
@@ -220,5 +220,5 @@ jPOSTdbの特徴
     - 色の濃いノードがとりエンリッチしています
 - jPOSTdbは[ChIP-Altas](https://chip-atlas.org/)と連携しており、ヒトをはじめ、いくつかの生物種ではjPOSTdbで変動解析した結果をChIP-Atlasの解析フォームを用いてエンリッチメント解析ができます
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_23.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_23.png)
 
