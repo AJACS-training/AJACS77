@@ -32,7 +32,7 @@
 ## jPOSTdbとは
 jPOSTdbは質量分析に基づくプロテオームデータを"再解析"をし、その結果を収録したデータベースです。
 
-![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpost.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpost.png)
 
 jPOSTrepに登録したデータを直接見れるわけではありません。
 
@@ -46,7 +46,7 @@ jPOSTdbの特徴
 ---
 ## [jPOSTdb webサイト](https://globe.jpostdb.org/)
 
-![jpost](https://github.com/moriya-dbcls/jPOSTdb/blob/master/2019/images/jpostdb_01.png)
+![jpost](https://raw.githubusercontent.com/moriya-dbcls/jPOSTdb/master/2019/images/jpostdb_01.png)
 
 - Topページ
   - 最初に、データベースに入っているデータセットの生物種の割合を示したチャートが出ます
